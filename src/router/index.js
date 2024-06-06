@@ -9,24 +9,24 @@ import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
 
 
-// const routes = [
-//   {
-//     path: '/',
-//     component: DashboardLayout,
-//     children: [
-//       {
-//         path: '',
-//         name: 'DashboardHome',
-//         component: DashboardHome,
-//       },
-//       {
-//         path: 'users',
-//         name: 'UserManagement',
-//         component: UserManagement,
-//       },
-//     ],
-//   },
-// ];
+const routes = [
+  {
+    path: '/',
+    component: DashboardLayout,
+    children: [
+      {
+        path: '',
+        name: 'DashboardHome',
+        component: DashboardHome,
+      },
+      {
+        path: 'users',
+        name: 'UserManagement',
+        component: UserManagement,
+      },
+    ],
+  },
+];
 
 
 const router = createRouter({
